@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.2.32:3306/instudiome
+    username: instudio
+    password: 123qwe
+
+mybatis:
+  #实体类所做包
+  type-aliases-package: com.ln.entity
+  #mapper.xml所在位置
+  mapper-locations: classpath:mapper/*.xml
+
+# log
+logging:
+  config: classpath:logback-spring.xml
+  path: /data/runtimes/log/sb-test
+
+#Server
+server:
+  port: 8081
+  context-path: /sbdemo
+
+
+
